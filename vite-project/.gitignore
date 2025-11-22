@@ -1,4 +1,4 @@
-# Logs
+# ---------------- LOGS ----------------
 logs
 *.log
 npm-debug.log*
@@ -7,18 +7,31 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# ---------------- DEPENDENCIES ----------------
+node_modules/
 
-# Editor directories and files
+# ---------------- BUILD OUTPUT ----------------
+dist/
+dist-ssr/
+.vite/
+
+# ---------------- ENV FILES ----------------
+.env
+.env*.local
+
+# ---------------- SYSTEM FILES ----------------
+.DS_Store
+Thumbs.db
+
+# ---------------- EDITOR FILES ----------------
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
+
+# ---------------- PROJECT FILES ----------------
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.local
