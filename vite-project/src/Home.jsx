@@ -2,12 +2,13 @@
 
 import ThemeToggle from "./Components/ThemeToggle";
 import BackgroundAnimations from "./Components/Background";
+import  Navbar from "./Components/Navbar";
 
 
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground ">
       {/*Theme Toggle */}
       <ThemeToggle />
       {/*Background Effect */}
@@ -17,6 +18,7 @@ const Home = () => {
 </div>
 
       {/*Navbar*/}
+      <Navbar />
       {/*Main Content */}
       {/*Footer*/}
     </div>
