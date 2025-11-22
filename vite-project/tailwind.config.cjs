@@ -1,19 +1,15 @@
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       keyframes: {
         float: {
-          "0%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-20px)" },
-          "100%": { transform: "translateY(0px)" },
+          "0%, 100%": { transform: "translateY(0)", opacity: "0.8" },
+          "50%": { transform: "translateY(-12px)", opacity: "1" },
         },
       },
       animation: {
-        float: "float 3s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
       },
     },
   },
