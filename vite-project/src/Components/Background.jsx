@@ -28,25 +28,26 @@ const BackgroundAnimations = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-      {stars.map((item) => (
-        <div
-          key={item.id}
-          className="absolute rounded-full animate-float"
-          style={{
-            width: `${item.size}px`,
-            height: `${item.size}px`,
-            left: `${item.x}%`,
-            top: `${item.y}%`,
-            opacity: item.opacity,
-            background: item.color,
-            animationDuration: `${item.animationDuration}s`,
-            animationDelay: `${Math.random() * 2}s`,
-          }}
-        ></div>
-      ))}
-    </div>
-  );
+  <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+    {stars.map((item) => (
+      <div
+        key={item.id}
+        className="absolute rounded-full animate-float"
+        style={{
+          width: `${item.size}px`,
+          height: `${item.size}px`,
+          left: `${item.x}%`,
+          top: `${item.y}%`,
+          opacity: item.opacity,
+          background: item.color,
+          animationDuration: `${item.animationDuration}s`,
+          animationDelay: `${Math.random() * 2}s`,
+        }}
+      />
+    ))}
+  </div>
+);
 };
+
 
 export default BackgroundAnimations;

@@ -1,11 +1,12 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       keyframes: {
         float: {
-          "0%, 100%": { transform: "translateY(0)", opacity: "0.8" },
-          "50%": { transform: "translateY(-12px)", opacity: "1" },
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       animation: {
